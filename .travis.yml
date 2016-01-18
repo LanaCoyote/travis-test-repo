@@ -7,6 +7,9 @@ node_js:
 env:
   - NODE_ENV="development"
   - NODE_ENV="production";SESSION_SECRET="La li lu le lo"
+exclude:
+  - node_js: "0.12"
+    env: NODE_ENV="development"
 script: gulp travis
 notifications:
   email:
